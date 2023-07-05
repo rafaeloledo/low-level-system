@@ -3,7 +3,7 @@
 
 section .data
   msg db "Hello World!"
-  len equ $- msg
+  len equ $ - msg
 
 section .text
 
