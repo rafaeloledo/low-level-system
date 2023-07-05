@@ -2,7 +2,7 @@
 ; Link - ld -s -o hello hello.o
 
 section .data
-  msg db "Hello World!"
+  msg db "Hello World!", 0xA
   len equ $ - msg
 
 section .text
