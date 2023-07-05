@@ -3,7 +3,7 @@
 
 section .data
   msg db "Hello World!"
-  tam equ $- msg
+  len equ $- msg
 
 section .text
 
@@ -13,7 +13,7 @@ _start:
   mov eax, 0x4 ; tell to send
   mov ebx, 0x1 ; to stdout
   mov ecx, msg ; the msg
-  mov edx, tam ; specified length
+  mov edx, len ; specified length
   int 0x80 ; execute
 
   mov eax, 0x1 ; Program ending
