@@ -2,7 +2,7 @@
 ; Link - ld -s -o hello hello.o
 
 section .data
-  msg db "Hello World!", 0xA
+  msg db "Hello World!", 0xA, 0xD ; Line break and null char
   len equ $ - msg
 
 section .text
