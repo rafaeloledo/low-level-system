@@ -1,1 +1,0 @@
-cl program.cpp user32.lib
