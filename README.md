@@ -1,32 +1,19 @@
-the language is `deez-blah` with the extension `dbl`
 
-it's a lightweight compiler for my tiny programming language
+## Ingredients
 
-it compiles to `masm` 32-bit
+> TENSTAR ROBOT - RFID KIT
 
-## TODO
+- 220 Ohms Resistor
+- LED
+- 2 jumper wires
+- Protoboard (Solderless)
 
-create the compiler in cpp
+### Method
 
-make possible deps relative to project
+- Red wire on Resistor's left that connects LED's positive side
+- LED's negative (ground) side connected in the black jumper
+- RED jumper connected in Arduino's 10th pin and the black on the GND pin
 
-## deps
+<img src="assets/live.jpeg" width="480" alt="live pic">
 
-the current dependencies are `crinkler` and `masm32`
-
-the first in the path
-
-the second in the `C:\` root folder
-
-and the `masm32\bin` folder in the path with `ml.exe`
-
-## disclaimers
-
-the current `.cmd` build script considers the `SDK` version of your system
-make sure it matches
-
-## inspiration
-
-`PlummersSoftwareLLC/HelloAssembly`
-
-`orosmatthew/hydrogen-cpp`
+![gif](assets/live.gif)
